@@ -7,7 +7,7 @@
 ###### Magnetometer I2C address: 0011110b, WRITE: 0011110 b --> 0x3C when b = 0, READ: 0011110 b --> 0x3D when b = 1
 
 <img width="1086" height="510" alt="image" src="https://github.com/user-attachments/assets/2b5f524d-b79f-49a5-acdd-541c94028918" />
-bnZA
+
 ##### What is the sub-address (SUB), and how does it differ from the I2C address?
 ###### The I2C devices decides what device the bus responds to, the sub-address decides what register to read/write inside the device. The sub-address is a 2nd byte of data that is sent after the I2C acknowledges it. 
 
