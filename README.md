@@ -1,8 +1,7 @@
 # ⭐EE186-Lab3⭐
 
 ### Part 3: Getting Started 
-##### What is the I2C addresses of the accelerometer and magnetometer? Represent the r/w bit
-using b. 
+##### What is the I2C addresses of the accelerometer and magnetometer? Represent the r/w bit using b. 
 
 ###### Accelerometer I2C address: 0011001b, WRITE: 0011001 b --> 0x32 when b = 0, READ: 0011001 b --> 0x33 when b = 1
 ###### Magnetometer I2C address: 0011110b, WRITE: 0011110 b --> 0x3C when b = 0, READ: 0011110 b --> 0x3D when b = 1
