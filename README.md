@@ -11,8 +11,7 @@
 ##### What is the sub-address (SUB), and how does it differ from the I2C address?
 ###### The I2C devices decides what device the bus responds to, the sub-address decides what register to read/write inside the device. The sub-address is a 2nd byte of data that is sent after the I2C acknowledges it. 
 
-##### To enable acceleration data measurement, we need to configure the CTRL1 register by
-selecting the data rate and setting the enable bits. What is the CTRL1 register address and what value should be written to this register to accomplish this?
+##### To enable acceleration data measurement, we need to configure the CTRL1 register by selecting the data rate and setting the enable bits. What is the CTRL1 register address and what value should be written to this register to accomplish this?
 ###### CTRL1 register address: 0x20. A value of 1 should be written to this register to accomplish this. 
 
 ##### To read acceleration data for the X, Y, and Z axes, what are the 8-bit sub-addresses that the transmitter would use to request the data?
