@@ -1,5 +1,7 @@
 # ⭐EE186-Lab3⭐
 
+###### Note: Under measuring-gravity-pt5, main3.c includes the code for the modified single I2C read transaction implementation
+
 ### Part 3: Getting Started 
 ##### What is the I2C addresses of the accelerometer and magnetometer? Represent the r/w bit using b. 
 
@@ -18,4 +20,8 @@
 ###### X: OUT_X_L_A = 0x28 (low), OUT_X_H_X = 0x29 (high)
 ###### Y: OUT_Y_L_A = 0x2A (low)	OUT_Y_H_A = 0x2B (high)
 ###### Z: OUT_Z_L_A = 0x2C (low)	OUT_Z_H_A = 0x2D (high)
+
+### Part 5: Measuring Gravity
+##### Explain how the arguments to HAL I2C Mem Read() should be changed to accomplish this.
+###### The MemAddress was changed to turn on auto-increment, single byte to 6 bytes, and the size from 1 to 6, so the sensor will then send all 6 bytes instead of just 1 byte at a time per transaction. 
 
